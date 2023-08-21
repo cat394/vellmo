@@ -1,13 +1,10 @@
 import styles from '../../css/AboutMe.module.css';
 
 export default function AboutMe() {
-  const { container, profile, comment, block2, block2Title, block2Text } = styles;
+  const { container, comment, block2, block2Title, block2Text } = styles;
 
   return (
     <section className={container}>
-      <div className={profile}>
-        <img src="/assets/about/profile.jpg" />
-      </div>
       <div className={comment}>
         <div className={block2}>
           <div className={block2Title}>

@@ -6,17 +6,6 @@
   color: var(--text-black);
 }
 
-.profile {
-  border: 1px solid black;
-  border-radius: 50%;
-  margin: auto;
-  overflow: hidden;
-}
-
-.profile img {
-  max-width: 150px;
-}
-
 .comment .block2 {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -35,15 +24,6 @@
 
 .comment .block2 .block2Text {
   line-height: 1.8;
-}
-
-@container profile (max-width: 1226px) {
-  .profile .block1 {
-    grid-template-columns: 1fr;
-  }
-  .profile .block1 .block1Text dl dd::before {
-    content: '';
-  }
 }
 
 @media (max-width: 1000px) {
