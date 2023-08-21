@@ -1,4 +1,3 @@
-import Divider from '../Divider';
 import SupportCredit from "./SupportCredit";
 import SupportPolicy from "./SupportPolicy";
 import SupportDisclaimer from "./SupportDisclaimer";
@@ -9,9 +8,9 @@ export default function Support() {
     <div className={styles.support}>
       <h1>Support</h1>
       <SupportCredit />
-      <Divider marginBlock="10vh" />
+      <div style={{height: "15vh"}}></div>
       <SupportPolicy />
-      <Divider marginBlock="10vh" />
+      <div style={{height: "13vh"}}></div>
       <SupportDisclaimer />
     </div>
   )

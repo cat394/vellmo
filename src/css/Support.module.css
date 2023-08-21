@@ -23,6 +23,11 @@
 
 .support section ul li {
   font-size: var(--text-s);
+  color: var(--text-black);
+}
+
+.support time {
+  color: var(--text-brown);
 }
 
 .support section ul li::before {
