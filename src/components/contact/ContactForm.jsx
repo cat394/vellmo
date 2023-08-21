@@ -28,7 +28,7 @@ export default function Form() {
   return (
     <section className={form}>
       <h2>お問い合わせ</h2>
-      <form netlify>
+      <form data-netlify={true}>
         {inputs.map(input => {
           return (
             <Input {...input} key={input.id}/>
