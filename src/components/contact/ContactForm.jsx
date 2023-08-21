@@ -28,7 +28,10 @@ export default function Form() {
   return (
     <section className={form}>
       <h2>お問い合わせ</h2>
-      <form name="contact" netlify>
+      <form 
+        action="https://ssgform.com/s/aDSyajnIlm3n"
+        method="post"
+      >
         {inputs.map(input => {
           return (
             <Input {...input} key={input.id} />
