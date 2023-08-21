@@ -1,0 +1,40 @@
+.linkBar {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+  background-color: var(--page-bg);
+  -webkit-box-shadow: 7px 7px 10px 3px var(--shadow);
+  -moz-box-shadow: 7px 7px 10px 3px var(--shadow);
+  box-shadow: 7px 7px 10px 3px var(--shadow);
+  font-weight: bold;
+}
+
+.link {
+  flex-basis: 100px;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.navLink {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: white;
+  background-color: var(--pink);
+  border: 2px solid var(--pink);
+}
+
+.navLink:hover {
+  outline: 3px solid var(--primary);
+  border-color: white;
+}
+
+.linkActive {
+  color: white;
+  border-width: 2px;
+  background-color: var(--primary);
+}

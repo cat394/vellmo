@@ -1,0 +1,23 @@
+.pills {
+  width: 90%;
+  margin-inline: auto;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.pill {
+  font-size: var(--text-xxs);
+  display: grid;
+  place-items: center;
+  min-width: 50px;
+  color: white;
+  background-color: var(--primary);
+  border-radius: 5px;
+  padding-block: 5px;
+  padding-inline: 5px;
+}
+
+.pill > span {
+  font-weight: bold;
+}

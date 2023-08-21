@@ -1,0 +1,13 @@
+.contents .block {
+  overflow-x: scroll;
+  overflow: auto;
+}
+
+.blockMemo h4 {
+  margin-bottom: 18px;
+}
+
+.blockCrousel {
+  width: 80vw;
+  margin: auto;
+}

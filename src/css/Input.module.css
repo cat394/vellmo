@@ -1,0 +1,27 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  padding: 2px;
+  width: 100%;
+  font: inherit;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--border-black);
+  margin-bottom: calc(20px + 1vw);
+  line-height: 2;
+  background-color: var(--filter-black);
+  color: var(--text-black);
+}
+
+.input::placeholder {
+  color: var(--text-black);
+}
+
+.input:focus {
+  outline: 2px solid var(--border-black);
+  border: 0;
+}

@@ -1,0 +1,31 @@
+.support,
+.support a {
+  color: var(--text-black);
+}
+
+.support section h2 {
+  border-bottom: 1px solid var(--border-black);
+  margin-block: 20px;
+}
+
+.support a {
+  text-decoration: underline;
+}
+
+.support a:hover {
+  text-decoration: none;
+}
+
+.support section p {
+  padding-block: 0.5em;
+  line-height: 1.5;
+}
+
+.support section ul li {
+  font-size: var(--text-s);
+}
+
+.support section ul li::before {
+  content: '・';
+  display: inline;
+}

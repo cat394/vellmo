@@ -1,0 +1,9 @@
+.links {
+  display: flex;
+  justify-content: center;
+  margin-block: 50px;
+}
+
+.aboutShopContainer {
+  width: 90vw;
+}

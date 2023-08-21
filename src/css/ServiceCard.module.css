@@ -1,0 +1,143 @@
+.block {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 50px;
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 7px 7px 10px 3px var(--shadow);
+  -moz-box-shadow: 7px 7px 10px 3px var(--shadow);
+  box-shadow: 7px 7px 10px 3px var(--shadow);
+  padding-bottom: 40px;
+  background-color: transparent;
+  border: 1px solid var(--text-black);
+}
+
+.block .blockLeft {
+  color: white;
+}
+
+.block .blockLeft .text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(274px, 100%), 1fr));
+  place-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.block .blockLeft .text .textLeft {
+  text-shadow: 1px 1px var(--text-white);
+}
+
+
+.block .block .text .textLeft > h2 {
+  font-weight: bold;
+}
+
+.block .blockLeft .text .textRight {
+  padding: 7px;
+  padding-left: 30px;
+  background-color: #efb8c1;
+  border-radius: 5px;
+}
+
+.block .blockLeft .text .textRight h3 {
+  display: inline-block;
+  padding-block: 0.5em;
+  padding-left: 0.5em;
+  border-left: 2px solid white;
+  color: white;
+}
+
+.block .blockLeft .text .textRight ul {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-right: 30px;
+}
+
+.block .blockLeft .text .textRight ul li {
+  margin-block: 10px;
+}
+
+.block .blockLeft .text .textRight ul li::before {
+  content: '＜';
+  display: inline;
+}
+
+.block .blockLeft .text .textRight ul li::after {
+  content: '＞';
+  display: inline;
+}
+
+.blockRight {
+  display: grid;
+  place-items:center;
+}
+
+.blockRight h2 {
+  color: white;
+}
+
+.blockRight .container .menu {
+  background-color: #efb8c1;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+  border: 1px solid white;
+}
+
+.blockRight .container .menu table tr th,
+.blockRight .container .menu table tr td {
+  padding-block: 1em;
+  border-bottom: 1px solid #EBDACB;
+}
+
+.blockRight .container .menu table tr th {
+  padding-right: 1em;
+}
+
+.blockRight .container .menu table tr td {
+  padding-left: 1em;
+}
+
+.blockRight .container .menu table tr:last-child {
+  margin-bottom: 0;
+}
+
+.blockRight .container .menu table tr th {
+  text-align: left;
+}
+
+.pictures {
+  grid-column: 1 / 3;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.block .circle {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  right: -100%;
+  z-index: -10;
+  border-radius: 50%;
+}
+
+@media (max-width: 975px) {
+  .block {
+    grid-template-columns: 1fr;
+  }
+  .pictures {
+    width: 90%;
+    margin: auto;
+    grid-column: 1;
+    gap: 20px;
+  }
+}
+

@@ -1,0 +1,96 @@
+.form {
+  padding: 20px;
+  border: 2px solid var(--border-black);
+  position: relative;
+  overflow: hidden;
+  color: var(--text-black);
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form form {
+  display: grid;
+  gap: 30px;
+}
+
+.form form .textarea {
+  display: grid;
+  gap: 10px;
+  border: 0;
+  
+}
+
+
+.form form .textarea textarea {
+  width: 100%;
+  font: inherit;
+  border: 0;
+  border-bottom: 1px solid var(--border-black);
+  margin-bottom: 30px;
+  line-height: 2;
+  color: var(--text-black);
+  resize: vertical;
+  min-height: 100px;
+  background-color: var(--filter-black);
+}
+
+.form form .textarea textarea:focus {
+  outline: 2px solid var(--border-black);
+  border: none;
+}
+
+.form form .textarea textarea::placeholder {
+  color: var(--text-black);
+}
+
+.form form button.submit {
+  all: unset;
+  outline: revert;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+  line-height: 1.5;
+  background-color: var(--text-white);
+  border: 1px solid var(--border-black);
+  width: 40%;
+  text-align: center;
+  letter-spacing: 2;
+  border-radius: 5px;
+  justify-self: center;
+  -webkit-box-shadow: 3px 3px 0 3px var(--shadow);
+  -moz-box-shadow: 3px 3px 0 3px var(--shadow);
+  box-shadow: 3px 3px 0 3px var(--shadow);
+  translate: 0 -6px;
+}
+
+.form form button.submit:hover {
+  translate: 0;
+  box-shadow: none;
+}
+
+.form .circleTop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  right: -50%;
+  background-color: var(--pink);
+  border-radius: 50%;
+  z-index: -10;
+}
+
+.form .circleBottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -50%;
+  left: -50%;
+  background-color: var(--pink);
+  border-radius: 50%;
+  z-index: -10;
+}

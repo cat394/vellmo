@@ -1,0 +1,52 @@
+.imageCard {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 18px 13px var(--shadow);
+  -moz-box-shadow: 3px 3px 18px 13px var(--shadow);
+  box-shadow: 3px 3px 18px 13px var(--shadow);
+  background-color: var(--pink);
+}
+
+.block {
+  display: grid;
+  margin-inline: auto;
+  height: 100%;
+}
+
+.blockImage {
+  display: flex;
+  justify-content: center;
+}
+
+.blockImage img {
+  padding-block: 30px;
+  border-radius: 20%;
+}
+
+.blockDescription {
+  align-self: flex-end;
+}
+
+.blockPills {
+  margin-bottom: 10px;
+}
+
+.blockText {
+  width: 90%;
+  margin: auto;
+  color: var(--text-black);
+  
+}
+
+.blockText h2 {
+  font-size: var(--text-m);
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.blockText p {
+  font-size: var(--text-xs);
+  padding-block: 20px;
+  color: white;
+}

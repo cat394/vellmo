@@ -1,0 +1,82 @@
+.reservation {
+  padding: 20px;
+  border: 2px solid var(--border-black);
+  width: fit-content;
+  position: relative;
+  overflow: hidden;
+  color: var(--text-black);
+}
+
+.reservation a {
+  text-decoration: underline;
+  color: var(--text-black);
+}
+
+.reservation a:hover {
+  text-decoration: none;
+}
+
+.reservation h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reservation .cards {
+  display: grid;
+  gap: 30px;
+}
+
+.reservation .cards .card {
+  border: 1px solid var(--border-black);
+  padding: 20px;
+  line-height: 1.5;
+  background-color: var(--filter-black);
+}
+
+.reservation .cards .card > * {
+  padding-left: 1em;
+}
+
+.reservation .cards .card h3 {
+  padding-left: 0.5em;
+  border-left: 1px solid var(--border-black);
+}
+
+.reservation .cards .card a {
+  display: inline-block;
+}
+
+.reservation .cards .block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  place-items: center;
+}
+
+.reservation .cards .block .blockLink a {
+  padding: 0.6em 0.9em;
+  background-color: #06C755;
+  color: white;
+  border-radius: 10px;
+}
+
+.reservation .circleTop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  left: -50%;
+  background-color: var(--primary);
+  border-radius: 50%;
+  z-index: -10;
+}
+
+.reservation .circleBottom {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -50%;
+  right: -50%;
+  background-color: var(--primary);
+  border-radius: 50%;
+  z-index: -10;
+}
