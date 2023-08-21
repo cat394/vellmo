@@ -1,7 +1,7 @@
 import styles from '../../css/ContactReserve.module.css';
 
 export default function ContactReserve() {
-  const { reservation, cards, card, block, circleTop, circleBottom } = styles;
+  const { reservation, cards, card, block, blockLink, circleTop, circleBottom } = styles;
   
   return (
     <section className={reservation}>
@@ -13,11 +13,14 @@ export default function ContactReserve() {
         </div>
         <div className={card}>
           <h3>LINE</h3>
-          <p>QRコード又はリンクからお友達登録していただくことができます。</p>
+          <p>QRコードからお友達登録していただくことができます。</p>
           <div className={block}>
             <div className="blockImage">
               <img src="/assets/contact/line.JPG" alt="Vell moのLINEアカウントのQRコード" width="300" height="300" />
             </div>
+            <div className={blockLink}>
+                <a href='https://line.me/ti/p/RhcSpjpQ90#~'>LINEでお友達登録する</a>
+              </div>
           </div>
         </div>
       </div>
