@@ -28,10 +28,10 @@ export default function Form() {
   return (
     <section className={form}>
       <h2>お問い合わせ</h2>
-      <form data-netlify={true}>
+      <form name="contact" netlify>
         {inputs.map(input => {
           return (
-            <Input {...input} key={input.id}/>
+            <Input {...input} key={input.id} />
           );
         })}
         <label className={textarea}>
