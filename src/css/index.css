@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: 'Arial Rounded MT'; 
+  src: url('/assets/fonts/ArialRoundedMTBold.woff2') format('woff2'),
+    url('/assets/fonts/ArialRoundedMTBold.woff') format('woff'),
+    url('/assets/fonts/ArialRoundedMTBold.ttf') format('ttf');
+  font-weight: normal; 
+  font-style: normal; 
+}
 
 * {
   margin: 0;
