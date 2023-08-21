@@ -84,7 +84,7 @@ const priceData = [
     plans: [
       {
         name: 'ワンカラー',
-        price: '4000'
+        price: '4400'
       },
       {
         name: 'グラデーション',
@@ -92,11 +92,11 @@ const priceData = [
       },
       {
         name: 'フレンチ',
-        price: '4500'
+        price: '4950'
       },
       {
         name: '定額デザイン',
-        price: '5000'
+        price: '5500'
       }
     ]
   },
@@ -108,12 +108,12 @@ const priceData = [
         price: '1650～3850'
       },
       {
-        name: 'スキャンプ',
+        name: 'スキャルプ',
         price: '1650～3850'
       },
       {      
         name: 'シャンプーブロー',
-        price: '16501～'
+        price: '1650～'
       },
       {
         name: '着付け',
@@ -125,7 +125,7 @@ const priceData = [
       },
       {
         name: 'コラーゲンカプセル(30分)',
-        price: '3000'
+        price: '33000'
       },
       {
         name: 'コラーゲンカプセル(回数券4回)',
