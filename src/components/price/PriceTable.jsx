@@ -2,39 +2,54 @@ import { priceData } from '../../priceData.js';
 import styles from '../../css/PriceTable.module.css';
 
 export default function PriceTable() {
-  const { priceMenu, back, menu, title, tables, dot, dot1, dot2, dot3, dot4, triangleTop, triangleBottom } = styles;
+  const { priceMenu, back, menu, title, tables } = styles;
 
-    return(
-      <article className={priceMenu}>
-        <div className={back}>
-          <div className={menu}>
-            <div className={title}>
-              <h2>Price list</h2>
-            </div>
-            <div className={tables}>
-              {priceData.map(categoryData => {
-                return (
-                  <table key={categoryData}>
-                    <caption>{categoryData.title}</caption>
-                    <tbody>
-                      {categoryData.plans.map(plan => {
-                        return (
-                          <tr key={plan}>
-                            <th>{plan.name}</th>
-                            <td>{plan.price}円</td>
+  const splitByCharacter = (name) => {
+    const char = name.includes('＋') ? '＋' : name.includes('(') ? '(' : null;
+    if (!char) return [name];
+    
+    const index = name.indexOf(char);
+    return [name.substring(0, index), name.substring(index)];
+  };
 
-                          </tr>
-                        )
-                      })}
-                    </tbody>
-                  </table>
-                )
-              })}
-            </div>
+  return (
+    <article className={priceMenu}>
+      <div className={back}>
+        <div className={menu}>
+          <div className={title}>
+            <h2>Price list</h2>
+          </div>
+          <div className={tables}>
+            {priceData.map(categoryData => {
+              return (
+                <table key={categoryData.title}>
+                  <caption>{categoryData.title}</caption>
+                  <tbody>
+                    {categoryData.plans.map(plan => {
+                      const [firstPart, secondPart] = splitByCharacter(plan.name);
+                      return (
+                        <tr key={plan.name}>
+                          <th style={{display: 'flex', flexWrap: 'wrap'}}>
+                            {secondPart ? (
+                              <>
+                                <span>{firstPart}</span>
+                                <span style={{flexBasis: 'max-content'}}>{secondPart}</span>
+                              </>
+                            ) : (
+                              firstPart
+                            )}
+                          </th>
+                          <td>{plan.price}円</td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              )
+            })}
           </div>
         </div>
-
-        
-      </article>
-    )
+      </div>
+    </article>
+  )
 }
