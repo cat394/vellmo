@@ -47,7 +47,7 @@ export default function ServiceCard(props) {
     <article>
       <div className={block}>
         <div className={blockLeft}>
-          <img src={commonPath + heroImage} alt={heroImageAlt} />
+          <img src={commonPath + heroImage} alt={heroImageAlt} width="950" height="634" />
           <div className={text}>
             <div className={textLeft}>
               {subText && <p>{subText}</p>}
