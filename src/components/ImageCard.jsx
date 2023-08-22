@@ -27,7 +27,7 @@ export default function ImageCard(props) {
     <article className={imageCard}>
       <div className={block}>
         <div className={blockImage}>
-          <img src={product.image} alt={product.name} width="500" height="375" />
+          <img src={product.image.src} alt={product.name} width={product.image.width} height={product.image.height} />
         </div>
         <div className={blockDescription}>
           <div className={blockPills}>
