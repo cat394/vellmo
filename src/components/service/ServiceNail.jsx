@@ -17,15 +17,15 @@ export default function ServiceNail() {
     menuList: nailMenu,
     image: {
       commonPath: '/assets/service/',
-      heroImage: 'nail-hero.jpg',
+      heroImage: 'nail-hero.webp',
       heroImageAlt: 'ネイル',
       subImages: [
         {
-          path: 'nail1.jpg',
+          path: 'nail1.webp',
           alt: '付け爪の種類'
         },
         {
-          path: 'nail2.jpg',
+          path: 'nail2.webp',
           alt: 'ネイル室'
         },
         {

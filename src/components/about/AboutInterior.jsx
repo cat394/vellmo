@@ -13,7 +13,7 @@ export default function AboutInterior() {
       },
       {
         id: 2,
-        path: 'image2.jpg',
+        path: 'image2.webp',
         alt: '美容室の椅子',
         width: '667',
         height: '500'

@@ -1,5 +1,4 @@
 import ServiceNail from './ServiceNail';
-import ServiceCapsule from './ServiceCupsule';
 import styles from '../../css/Service.module.css';
 
 export default function Service() {

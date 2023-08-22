@@ -6,14 +6,14 @@ export default function AboutInterior() {
     images: [
       {
         id: 1,
-        path: 'image1.jpg',
+        path: 'image1.webp',
         alt: 'Vell moの店舗',
         width: '375',
         height: '500'
       },
       {
         id: 2,
-        path: 'image2.jpg',
+        path: 'image2.webp',
         alt: 'Vell moの立札',
         width: '661',
         height: '500'
@@ -27,7 +27,7 @@ export default function AboutInterior() {
       },
       {
         id: 4,
-        path: 'image4.jpg',
+        path: 'image4.webp',
         alt: 'ネイル室へと続く脇道',
         width: '375',
         height: '500'

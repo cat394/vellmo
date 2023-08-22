@@ -10,13 +10,13 @@ export default function SupportCredit() {
       <div className={container}>
         <figure>
           <div className={imageContainer}>
-            <img src="/assets/home/hero.jpg" alt="flower" width="600" height="400" />
+            <img src="/assets/home/hero.webp" alt="flower" width="600" height="400" />
           </div>
           <figcaption>著作者：<a href="https://jp.freepik.com/free-vector/watercolor-floral-background_7938347.htm#&position=0&from_view=collections" target='_blink'>pikisuperstar</a>／出典：Freepik</figcaption>
         </figure>
         <figure>
         <div className={imageContainer}>
-          <img src="/assets/service/nail-hero.jpg" alt="nail" width="600" height="400" />
+          <img src="/assets/service/nail-hero.webp" alt="nail" width="600" height="400" />
         </div>
         <figcaption>著作者：<a href="https://www.freepik.com/free-photo/healthy-beautiful-manicure-manicurist_11296770.htm#query=nail&position=2&from_view=search&track=sph">Freepik</a></figcaption>
       </figure>
