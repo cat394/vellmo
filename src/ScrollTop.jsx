@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 export default function ScrollTop() {
   const { pathname } = useLocation();
-  const excludePaths = ['/about','/about/interior', '/about/shop'];
+  const excludePaths = ['/about/interior', '/about/shop'];
 
   useEffect(() => {
     if (!excludePaths.includes(pathname)) {
