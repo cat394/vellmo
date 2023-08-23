@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-function useScrollToTop() {
+export default function ScrollToTop() {
   const location = useLocation();
   
   const pathsToExclude = ['/about/interior', '/about/shop'];
@@ -12,7 +12,5 @@ function useScrollToTop() {
     }
   }, [location]);
   
-  return null; // Reactコンポーネントとしてのエラーを避けるためにnullを返します。
+  return null;
 }
-
-export default useScrollToTop;
