@@ -5,7 +5,11 @@ import AboutShop from './AboutShop';
 
 export default function About() {
   useEffect(() => {
-    window.scrollTo(0, 0);
+    const timerId = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+
+    return () => clearTimeout(timerId);
   }, []);
 
   const { aboutContainer } = styles;
