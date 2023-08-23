@@ -8,7 +8,7 @@ export default function Footer() {
       <footer className={footer}>
         <div className={footerLine}>
           <div className={footerImage}>
-            <img src="/assets/logo.svg" alt="Vellmoのロゴ" width="100" height="100" />
+            <img src="/assets/vellmo_logo.svg" alt="Vellmoのロゴ" width="100" height="46" />
           </div>
           <div className={footerLinks}>
             <div className={footerLink}>
