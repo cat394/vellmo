@@ -39,7 +39,7 @@ export default function Navbar() {
   const { globalNav, desktopMenu, menuBtn, closeBtn, mobileMenu, mobileMenuLinks } = styles;
 
   const data = {
-    logoPath: '/assets/logo.svg',
+    logoPath: '/assets/vellmo_logo.svg',
     menuBtnPath: '/assets/menu-light.svg',
     menuBtnPathDark: '/assets/menu-dark.svg',
     closeBtnPath: '/assets/close-light.svg',
