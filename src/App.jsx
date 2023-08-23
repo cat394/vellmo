@@ -15,7 +15,7 @@ import ScrollTop from './ScrollTop';
 import './css/App.css';
 
 export default function App() {
-  useScrollToTop();
+  <ScrollTop />
   return (
     <BrowserRouter>
       <div className="app">
