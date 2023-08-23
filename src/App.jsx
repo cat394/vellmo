@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ScrollTop from './ScrollTop';
+import ScrollTop from './useScrollTop';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Home from './components/home/Home';
@@ -12,12 +12,14 @@ import AboutExterior from './components/about/AboutExterior';
 import AboutInterior from './components/about/AboutInterior';
 import AboutShopInfo from './components/about/AboutShopInfo';
 import Support from './components/support/Support';
+import useScrollToTop from './useScrollTop';
 import './css/App.css';
 
+
 export default function App() {
+  useScrollToTop();
   return (
     <BrowserRouter>
-      <ScrollTop />
       <div className="app">
         <Navbar />
         <main>
