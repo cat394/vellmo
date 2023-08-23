@@ -1,15 +1,16 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-export default function ScrollTop() {
-  const { pathname } = useLocation();
-  const excludePaths = ['/about/interior', '/about/shop'];
+function useScrollToTop() {
+  const location = useLocation();
+
+  const pathsToExclude = ['/about/interior', '/about/shop']; // この配列にスクロールを保持したいパスを追加
 
   useEffect(() => {
-    if (!excludePaths.includes(pathname)) {
+    if (!pathsToExclude.includes(location.pathname)) {
       window.scrollTo(0, 0);
     }
-  }, [pathname]);
-
-  return null;
+  }, [location]);
 }
+
+export default useScrollToTop;
