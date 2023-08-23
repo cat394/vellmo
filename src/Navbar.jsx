@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import styles from './css/Navbar.module.css';
+import ThemeSwitchSvg from './components/ThemeSwitchSvg';
 
 export default function Navbar() {
   const [ isMenuOpen, setIsMenuOpen ] = useState(false);
@@ -77,7 +78,7 @@ export default function Navbar() {
     ]
   }
 
-  const { logoPath, menuBtnPath, menuBtnPathDark,closeBtnPath, closeBtnPathDark, themeBtnPath, themeBtnPathDark, logoAlt, menuBtnAlt, closeBtnAlt, logoWidth, logoHeight, btnWidth, btnHeight, links } = data;
+  const { logoPath, menuBtnPath, menuBtnPathDark,closeBtnPath, closeBtnPathDark, logoAlt, menuBtnAlt, closeBtnAlt, logoWidth, logoHeight, btnWidth, btnHeight, links } = data;
 
   return (
     <header>
@@ -99,8 +100,7 @@ export default function Navbar() {
           })}
           <li>
             <button className="ax-button" onClick={handleThemeClick}>
-              {!isDarkTheme && <img src={themeBtnPath} alt="" width="20" height="20" />}
-              {isDarkTheme && <img src={themeBtnPathDark} alt="" width="20" height="20" />}
+              <ThemeSwitchSvg />
             </button>
           </li>
         </ul>
@@ -124,8 +124,7 @@ export default function Navbar() {
               })}
               <li>
               <button className="ax-button" onClick={handleThemeClick}>
-                {!isDarkTheme && <img src={themeBtnPath} alt="" width="30" height="30" />}
-                {isDarkTheme && <img src={themeBtnPathDark} alt="" width="30" height="30" />}
+                <ThemeSwitchSvg size='30px'/>
               </button>
               </li>
             </ul>  
