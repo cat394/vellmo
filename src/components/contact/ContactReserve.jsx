@@ -13,7 +13,7 @@ export default function ContactReserve() {
         </div>
         <div className={card}>
           <h3>LINE</h3>
-          <p>QRコードからお友達登録していただくことができます。</p>
+          <p>QRコードからお友達登録していただくことができます。プライベートなアカウントと混同してしまっているので分かりにくいかもしれませんが、ご了承ください。</p>
           <div className={block}>
             <div className="blockImage">
               <img src="/assets/contact/line.JPG" alt="Vell moのLINEアカウントのQRコード" width="300" height="300" />
