@@ -14,10 +14,11 @@ import Support from './components/support/Support';
 import ScrollTop from './ScrollTop';
 import './css/App.css';
 
+
 export default function App() {
-  <ScrollTop />
   return (
     <BrowserRouter>
+    <ScrollTop />
       <div className="app">
         <Navbar />
         <main>
