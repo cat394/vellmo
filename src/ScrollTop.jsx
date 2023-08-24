@@ -8,7 +8,11 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     if (!pathsToExclude.includes(location.pathname)) {
-      window.scrollTo(0, 0);
+      const timerId = setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 100);
+  
+      return () => clearTimeout(timerId);
     }
   }, [location]);
   
