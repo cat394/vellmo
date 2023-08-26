@@ -24,7 +24,7 @@ export default function PriceTable() {
               return (
                 <table key={categoryData.title}>
                   <caption>{categoryData.title}</caption>
-                  <tbody>
+                  <tbody style={{maxHeight: '65vh', overflow: 'auto'}}>
                     {categoryData.plans.map(plan => {
                       const [firstPart, secondPart] = splitByCharacter(plan.name);
                       return (

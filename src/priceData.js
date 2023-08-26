@@ -88,14 +88,42 @@ const priceData = [
       },
       {
         name: 'グラデーション',
-        price: '4000'
+        price: '4400'
+      },
+      {
+        name: 'マグネット',
+        price: '4950'
+      },
+      {
+        name: 'ミラー(ワンカラーorグラデ)',
+        price: '4950'
       },
       {
         name: 'フレンチ',
         price: '4950'
       },
       {
-        name: '定額デザイン',
+        name: '＋ミニオプション',
+        price: '550'
+      },
+      {
+        name: '＋ベースカラー追加',
+        price: '1100'
+      },
+      {
+        name: '＋カラー１色追加',
+        price: '110'
+      },
+      {
+        name: '＋マットコート',
+        price: '550'
+      },
+      {
+        name: '定額A',
+        price: '4950'
+      },
+      {
+        name: '定額B',
         price: '5500'
       }
     ]
