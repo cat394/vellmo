@@ -63,12 +63,7 @@
 }
 
 .block .blockLeft .text .textRight ul li::before {
-  content: '＜';
-  display: inline;
-}
-
-.block .blockLeft .text .textRight ul li::after {
-  content: '＞';
+  content: '・';
   display: inline;
 }
 
