@@ -20,11 +20,13 @@ export default function PriceTable() {
             <h2>Price list</h2>
           </div>
           <div className={tables}>
-            {priceData.map(categoryData => {
+            {priceData
+              .filter(categoryData => categoryData.title !== "nail")
+              .map(categoryData => {
               return (
                 <table key={categoryData.title}>
                   <caption>{categoryData.title}</caption>
-                  <tbody style={{maxHeight: '65vh', overflow: 'auto'}}>
+                  <tbody>
                     {categoryData.plans.map(plan => {
                       const [firstPart, secondPart] = splitByCharacter(plan.name);
                       return (

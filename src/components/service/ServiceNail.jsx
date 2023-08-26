@@ -10,7 +10,8 @@ export default function ServiceNail() {
     subText: '土曜日限定',
     title: 'Vell mo Nail',
     points: [
-      '自店での付け替え無料！',
+      '初回オフ無料',
+      '自店での付け替えオフ無料！',
       '完全個室！',
     ],
     menuList: nailMenu,
