@@ -1,20 +1,17 @@
-import { useEffect } from 'react';
+import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-export default function ScrollToTop() {
-  const location = useLocation();
-  
-  const pathsToExclude = ['/about', '/about/interior', '/about/shop'];
+function ScrollToTop({ excludePaths = [] }) {
+  const { pathname } = useLocation();
 
-  useEffect(() => {
-    if (!pathsToExclude.includes(location.pathname)) {
-      const timerId = setTimeout(() => {
-        window.scrollTo(0, 0);
-      }, 100);
-  
-      return () => clearTimeout(timerId);
+  useLayoutEffect(() => {
+    // 特定のパスの遷移時にスクロールリセットを無効化
+    if (!excludePaths.includes(pathname)) {
+      window.scrollTo(0, 0);
     }
-  }, [location]);
-  
+  }, [pathname, excludePaths]);
+
   return null;
 }
+
+export default ScrollToTop;

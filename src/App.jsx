@@ -18,7 +18,7 @@ import './css/App.css';
 export default function App() {
   return (
     <BrowserRouter>
-    <ScrollTop />
+    <ScrollTop excludePaths={['/about', '/about/exterior', '/about/interior', '/about/shop']}/>
       <div className="app">
         <Navbar />
         <main>
